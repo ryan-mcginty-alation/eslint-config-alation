@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-alation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint and Prettier configuration for Alation",
   "scripts": {
     "test": "echo \"Error: no test specified. Add tests if custom rules are created.\" && exit 1"
@@ -19,6 +19,8 @@
   "devDependencies": {
     "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.2.0",
+    "eslint-import-resolver-webpack": "^0.13.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "prettier": "^2.2.1"
@@ -26,8 +28,11 @@
   "peerDependencies": {
     "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.2.0",
+    "eslint-import-resolver-webpack": "^0.13.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "prettier": "^2.2.1"
-  }
+  },
+  "dependencies": {}
 }
