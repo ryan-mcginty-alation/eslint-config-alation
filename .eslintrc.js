@@ -19,10 +19,36 @@ module.exports = {
     "ecmaVersion": 2018
   },
   "plugins": [
+    "import",
     "react",
     "prettier"
   ],
   "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "always",
+        "tsx": "always",
+        "html" : "always"
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          ["builtin", "external"],
+          "internal",
+          ["sibling", "parent", "index"]
+        ],
+        "newlines-between": "always"
+      }
+    ],
+    "no-var": "error",
+    "one-var": ["error","never"],
+    "prefer-const": "error",
     "prettier/prettier": ["error", { // Prettier settings
       "singleQuote": true, // require single quotes
       "jsxSingleQuote": true, // require single quotes in JSX
