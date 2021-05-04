@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-alation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint and Prettier configuration for Alation",
   "scripts": {
     "test": "echo \"Error: no test specified. Add tests if custom rules are created.\" && exit 1"
