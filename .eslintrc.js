@@ -24,6 +24,7 @@ module.exports = {
     "prettier"
   ],
   "rules": {
+    "import/no-unresolved": "error",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -49,12 +50,14 @@ module.exports = {
     "no-var": "error",
     "one-var": ["error","never"],
     "prefer-const": "error",
+    "prefer-template": "error",
     "prettier/prettier": ["error", { // Prettier settings
       "singleQuote": true, // require single quotes
       "jsxSingleQuote": true, // require single quotes in JSX
       "trailingComma": "es5", // require trailing commas after objects, arrays etc.
       "jsxBracketSameLine": true, // JSX require multiline elements to end with closing bracket on last line
-      "bracketSpacing": false
+      "bracketSpacing": false,
+      "printWidth" : 120
     }],
     "no-unused-vars": ["error", {"ignoreRestSiblings": false}],
     "react/jsx-uses-react": "error", // Prevents "React" to be incorrectly marked as unused
