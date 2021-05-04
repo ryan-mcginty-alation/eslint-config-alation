@@ -47,6 +47,7 @@ module.exports = {
         "newlines-between": "always"
       }
     ],
+    "no-duplicate-imports": "error",
     "no-var": "error",
     "one-var": ["error","never"],
     "prefer-const": "error",
