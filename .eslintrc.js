@@ -27,6 +27,7 @@ module.exports = {
   "rules": {
     "import/first" : "error",
     "import/newline-after-import": "error",
+    "import/no-webpack-loader-syntax": "error",
     "import/no-unresolved": "error",
     "import/extensions": [
       "error",
