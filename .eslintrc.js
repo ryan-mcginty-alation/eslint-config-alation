@@ -9,6 +9,7 @@ module.exports = {
   },
   "extends": [
     "eslint:recommended", // Retain code quality checks from eslint
+    "plugin:import/recommended",
     "prettier"  // Override formatting checks with prettier
   ],
   "parserOptions": {
@@ -24,6 +25,8 @@ module.exports = {
     "prettier"
   ],
   "rules": {
+    "import/first" : "error",
+    "import/newline-after-import": "error",
     "import/no-unresolved": "error",
     "import/extensions": [
       "error",
