@@ -25,6 +25,7 @@ module.exports = {
     "prettier"
   ],
   "rules": {
+    "dot-notation": "error",
     "import/first" : "error",
     "import/newline-after-import": "error",
     "import/no-webpack-loader-syntax": "error",
@@ -35,9 +36,10 @@ module.exports = {
       {
         "js": "never",
         "jsx": "never",
-        "ts": "always",
-        "tsx": "always",
-        "html" : "always"
+        "ts": "never",
+        "tsx": "never",
+        "html": "always",
+        "less": "always",
       }
     ],
     "import/order": [
@@ -51,7 +53,13 @@ module.exports = {
         "newlines-between": "always"
       }
     ],
+    "no-bitwise": "error",
+    "no-extend-native": "error",
+    "no-param-reassign": "error",
+    "no-else-return": "error",
     "no-duplicate-imports": "error",
+    "no-unsafe-optional-chaining": "error",
+    "no-shadow": "error",
     "no-var": "error",
     "one-var": ["error","never"],
     "prefer-const": "error",
@@ -65,6 +73,7 @@ module.exports = {
       "printWidth" : 120
     }],
     "no-unused-vars": ["error", {"ignoreRestSiblings": false}],
+    "radix": "error",
     "react/jsx-uses-react": "error", // Prevents "React" to be incorrectly marked as unused
     "react/jsx-uses-vars": "error", // Prevents variables used in JSX to be incorrectly marked as unused
     "react/default-props-match-prop-types": "error", // Prevent extraneous defaultProps on components
