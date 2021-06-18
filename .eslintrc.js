@@ -26,6 +26,7 @@ module.exports = {
   ],
   "rules": {
     "dot-notation": "error",
+    "eqeqeq" : ["error", "always", {"null": "ignore"}],
     "import/first" : "error",
     "import/newline-after-import": "error",
     "import/no-webpack-loader-syntax": "error",
